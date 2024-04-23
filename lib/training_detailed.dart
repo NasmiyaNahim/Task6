@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class TrainingDetailed extends StatelessWidget {
   const TrainingDetailed({Key? key});
@@ -26,20 +25,42 @@ class TrainingDetailed extends StatelessWidget {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 20.0), // Adjust the top padding as needed
-            child: Container(
-              width: 325,
-              height: 700,
-              decoration: ShapeDecoration(
-                color: Colors.white,
-                shape: RoundedRectangleBorder(
-                  side: BorderSide(width: 1, color: Color(0xFFD9D9D9)),
-                  borderRadius: BorderRadius.circular(25),
-                ),
-              ),
+      body: Padding( // Added Padding widget to add space on the left side
+        padding: const EdgeInsets.only(left: 16.0), // Adjust left padding as needed
+        child: _buildTrainingPage(),
+      ),
+    );
+  }
+
+  Widget _buildTrainingPage() {
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          _buildBigContainer(),
+          SizedBox(height: 15), // Adjust the height as needed
+          _buildRemindMeContainer(),
+          SizedBox(height: 15), // Adjust the height as needed
+          _buildCheckPreRequirementsContainer(),
+          SizedBox(height: 15), // Adjust the height as needed
+          _buildStartContainer(),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildBigContainer() {
+    return Container(
+      width: 325,
+      height: 650,
+      decoration: ShapeDecoration(
+        color: Colors.white,
+        shape: RoundedRectangleBorder(
+          side: BorderSide(width: 1, color: Color(0xFFD9D9D9)),
+          borderRadius: BorderRadius.circular(25),
+        ),
+      ),
+
+              
               child: Stack(
                 children: [
                   Positioned(
@@ -69,6 +90,8 @@ class TrainingDetailed extends StatelessWidget {
                       ),
                     ),
                   ),
+    
+                  
                   Positioned(
                     left: 75, // Adjust the left position as needed
                     top: 22, // Adjust the top position as needed
@@ -283,9 +306,23 @@ class TrainingDetailed extends StatelessWidget {
                       ),
                     ),
                   ),
+
+                 Positioned(
+                    left: 17, // Adjust the left position as needed
+                    top: 186, // Adjust the top position as needed
+                    child: Text(
+    'Topics will Cover',
+    style: TextStyle(
+        color: Color(0xFFEE5602),
+        fontSize: 13,
+        fontFamily: 'Nunito',
+        fontWeight: FontWeight.w700,
+        height: 0,
+    ),
+)),
                   Positioned(
                     left: 17, // Adjust the left position as needed
-                    top: 187, // Adjust the top position as needed
+                    top: 210, // Adjust the top position as needed
                     child: SizedBox(
                       width: 288,
                       child: Text.rich(
@@ -487,23 +524,105 @@ class TrainingDetailed extends StatelessWidget {
                     ),
                   ),
                 ],
+              ), 
+            ); 
+          }
 
-                
-              ),
-              
-            ),
-
-            
-
-            
-
-            
-          ),
+  Widget _buildRemindMeContainer() {
+    return Container(
+      width: 324,
+height: 50,
+padding: const EdgeInsets.symmetric(horizontal: 114, vertical: 15),
+clipBehavior: Clip.antiAlias,
+decoration: ShapeDecoration(
+color: Color(0xFF8B8B8B),
+shape: RoundedRectangleBorder(
+borderRadius: BorderRadius.circular(15),
+),
+),
+child: Row(
+mainAxisSize: MainAxisSize.min,
+mainAxisAlignment: MainAxisAlignment.center,
+crossAxisAlignment: CrossAxisAlignment.center,
+children: [
+Text(
+'Remind Me',
+textAlign: TextAlign.center,
+style: TextStyle(
+color: Colors.white,
+fontSize: 15,
+fontFamily: 'Nunito',
+fontWeight: FontWeight.w700,
+height: 0,
+),
+),
+],
+),
+);
+}
+Widget _buildCheckPreRequirementsContainer() {
+    return Container(
+      width: 324,
+      height: 50,
+      padding: const EdgeInsets.symmetric(horizontal: 45, vertical: 15),
+      clipBehavior: Clip.antiAlias,
+      decoration: ShapeDecoration(
+        color: Color(0xFF077AD7),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
         ),
-
-
-        
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            'Check Pre-Requirements',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 15,
+              fontFamily: 'Nunito',
+              fontWeight: FontWeight.w700,
+              height: 0,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+Widget _buildStartContainer() {
+    return Container(
+      width: 324,
+      height: 50,
+      padding: const EdgeInsets.symmetric(horizontal: 45, vertical: 15),
+      clipBehavior: Clip.antiAlias,
+      decoration: ShapeDecoration(
+        color: Color(0xFF414ECA),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
+        ),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            'Start Assessment',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 15,
+              fontFamily: 'Nunito',
+              fontWeight: FontWeight.w700,
+              height: 0,
+            ),
+          ),
+        ],
       ),
     );
   }
 }
+
