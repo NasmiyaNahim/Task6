@@ -37,7 +37,7 @@ class TrainingDetailed extends StatelessWidget {
       child: Column(
         children: [
           _buildBigContainer(),
-          SizedBox(height: 15), // Adjust the height as needed
+          SizedBox(height: 20), // Adjust the height as needed
           _buildRemindMeContainer(),
           SizedBox(height: 15), // Adjust the height as needed
           _buildCheckPreRequirementsContainer(),
@@ -51,7 +51,7 @@ class TrainingDetailed extends StatelessWidget {
   Widget _buildBigContainer() {
     return Container(
       width: 325,
-      height: 650,
+      height: 784,
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
@@ -309,7 +309,7 @@ class TrainingDetailed extends StatelessWidget {
 
                  Positioned(
                     left: 17, // Adjust the left position as needed
-                    top: 186, // Adjust the top position as needed
+                    top: 195, // Adjust the top position as needed
                     child: Text(
     'Topics will Cover',
     style: TextStyle(
@@ -321,195 +321,201 @@ class TrainingDetailed extends StatelessWidget {
     ),
 )),
                   Positioned(
-                    left: 17, // Adjust the left position as needed
-                    top: 210, // Adjust the top position as needed
-                    child: SizedBox(
-                      width: 288,
-                      child: Text.rich(
-                        TextSpan(
-                          children: [
-                            TextSpan(
-                              text: '1. Introduction to Python\n',
-                              style: TextStyle(
-                                color: Color(0xFF414ECA),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '• What is Python and why is it popular?\n• Setting up your Python development environment\n',
-                              style: TextStyle(
-                                color: Color(0xFF8B8B8B),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w600,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '2. Python Fundamentals\n',
-                              style: TextStyle(
-                                color: Color(0xFF414ECA),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '• Understanding basic syntax and data types (numbers,\n  strings, booleans, etc.)\n• Working with variables and operators (arithmetic, comparison, logical)\n',
-                              style: TextStyle(
-                                color: Color(0xFF8B8B8B),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w600,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '3. Control Flow\n',
-                              style: TextStyle(
-                                color: Color(0xFF414ECA),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '• Using conditional statements (if/else) for decision making\n• Implementing loops (for, while) for repetitive tasks\n',
-                              style: TextStyle(
-                                color: Color(0xFF8B8B8B),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w600,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '4. Functions\n',
-                              style: TextStyle(
-                                color: Color(0xFF414ECA),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '• Defining and using functions to organize code\n• Understanding arguments and return values\n',
-                              style: TextStyle(
-                                color: Color(0xFF8B8B8B),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w600,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '5. Data Structures\n',
-                              style: TextStyle(
-                                color: Color(0xFF414ECA),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '• Creating and manipulating lists, tuples, and dictionaries\n',
-                              style: TextStyle(
-                                color: Color(0xFF8B8B8B),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w600,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '6. Input and Output\n',
-                              style: TextStyle(
-                                color: Color(0xFF414ECA),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '• Getting user input using the input() function\n• Formatting and printing output to the console\n',
-                              style: TextStyle(
-                                color: Color(0xFF8B8B8B),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w600,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '7. Debugging Techniques\n',
-                              style: TextStyle(
-                                color: Color(0xFF414ECA),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '• Identifying and fixing errors in your Python code\n',
-                              style: TextStyle(
-                                color: Color(0xFF8B8B8B),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w600,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '8. Additional Topics (Optional)\n',
-                              style: TextStyle(
-                                color: Color(0xFF414ECA),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '• Introduction to file handling (reading and writing to files)\n• Basic modules and packages in Python\n',
-                              style: TextStyle(
-                                color: Color(0xFF8B8B8B),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w600,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '9. Practice and Next Steps\n',
-                              style: TextStyle(
-                                color: Color(0xFF414ECA),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w700,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: '• Resources for further learning and practice exercises\n• Exploring potential applications of Python\n',
-                              style: TextStyle(
-                                color: Color(0xFF8B8B8B),
-                                fontSize: 10,
-                                fontFamily: 'Nunito',
-                                fontWeight: FontWeight.w600,
-                                height: 0,
-                              ),
-                            ),
-                            TextSpan(
-                              text: 'This training will equip you with the essential building blocks of Python programming. By the end, you\'ll be able to write simple Python programs and have a strong foundation for further learning.',
+  left: 17, // Adjust the left position as needed
+  top: 218, // Adjust the top position as needed
+  child: SizedBox(
+    width: 288,
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          '1. Introduction to Python',
+          style: TextStyle(
+            color: Color(0xFF414ECA),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        SizedBox(height: 5), // Add space between numbered text and bullet points
+        Text(
+          '• What is Python and why is it popular?\n• Setting up your Python development environment',
+          style: TextStyle(
+            color: Color(0xFF8B8B8B),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        SizedBox(height: 5), // Adjust the height as needed
+        Text(
+          '2. Python Fundamentals',
+          style: TextStyle(
+            color: Color(0xFF414ECA),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        SizedBox(height: 5), // Add space between numbered text and bullet points
+        Text(
+          '• Understanding basic syntax and data types (numbers, \n   strings, booleans, etc.)\n• Working with variables and operators (arithmetic, \n   comparison, logical)',
+          style: TextStyle(
+            color: Color(0xFF8B8B8B),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+                            SizedBox(height: 5), // Add space between numbered text and bullet points
+         SizedBox(height: 5), // Adjust the height as needed
+        Text(
+          '3. Control Flow',
+          style: TextStyle(
+            color: Color(0xFF414ECA),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        SizedBox(height: 5), // Add space between numbered text and bullet points
+        Text(
+          '• Using conditional statements (if/else) for decision making\n• Implementing loops (for, while) for repetitive tasks',
+          style: TextStyle(
+            color: Color(0xFF8B8B8B),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+         SizedBox(height: 5), // Adjust the height as needed
+        Text(
+          '4. Functions',
+          style: TextStyle(
+            color: Color(0xFF414ECA),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        SizedBox(height: 5), // Add space between numbered text and bullet points
+        Text(
+          '• Defining and using functions to organize code\n• Understanding arguments and return values',
+          style: TextStyle(
+            color: Color(0xFF8B8B8B),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+                            SizedBox(height: 5), // Add space between numbered text and bullet points
+        SizedBox(height: 5), // Adjust the height as needed
+        Text(
+          '5. Data Structures',
+          style: TextStyle(
+            color: Color(0xFF414ECA),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        SizedBox(height: 5), // Add space between numbered text and bullet points
+        Text(
+          '• Creating and manipulating lists, tuples, and dictionaries',
+          style: TextStyle(
+            color: Color(0xFF8B8B8B),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+                             // Add space between numbered text and bullet points
+        SizedBox(height: 5), // Adjust the height as needed
+        Text(
+          '6. Input and Output',
+          style: TextStyle(
+            color: Color(0xFF414ECA),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        SizedBox(height: 5), // Add space between numbered text and bullet points
+        Text(
+          '• Getting user input using the input() function\n• Formatting and printing output to the console',
+          style: TextStyle(
+            color: Color(0xFF8B8B8B),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+                             // Add space between numbered text and bullet points
+        SizedBox(height: 5), // Adjust the height as needed
+        Text(
+          '7. Debugging Techniques',
+          style: TextStyle(
+            color: Color(0xFF414ECA),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        SizedBox(height: 5), // Add space between numbered text and bullet points
+        Text(
+          '• Identifying and fixing errors in your Python code',
+          style: TextStyle(
+            color: Color(0xFF8B8B8B),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+                            SizedBox(height: 5), // Add space between numbered text and bullet points
+        SizedBox(height: 5), // Adjust the height as needed
+        Text(
+          '8. Additional Topics (Optional)',
+          style: TextStyle(
+            color: Color(0xFF414ECA),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        SizedBox(height: 5), // Add space between numbered text and bullet points
+        Text(
+          '• Introduction to file handling (reading and writing to files)\n• Basic modules and packages in Python',
+          style: TextStyle(
+            color: Color(0xFF8B8B8B),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+                            SizedBox(height: 5), // Add space between numbered text and bullet points
+        SizedBox(height: 5), // Adjust the height as needed
+        Text(
+          '9. Practice and Next Steps',
+          style: TextStyle(
+            color: Color(0xFF414ECA),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        SizedBox(height: 5), // Add space between numbered text and bullet points
+        Text(
+          '• Resources for further learning and practice exercises\n• Exploring potential applications of Python',
+          style: TextStyle(
+            color: Color(0xFF8B8B8B),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+                            SizedBox(height: 8), // Add space between numbered text and bullet points
+        Text(
+           'This training will equip you with the essential building blocks of Python programming. By the end, you\'ll be able to write simple Python programs and have a strong foundation for further learning.',
                               style: TextStyle(
                                 color: Color(0xFF8B8B8B),
                                 fontSize: 10,
@@ -522,10 +528,10 @@ class TrainingDetailed extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
-                ],
-              ), 
-            ); 
+                  ],),
+                
+              ); 
+             
           }
 
   Widget _buildRemindMeContainer() {
