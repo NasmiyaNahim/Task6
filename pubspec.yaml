@@ -62,6 +62,15 @@ flutter:
   assets:
      - assets/images/Arrow back.png
      - assets/images/python.png
+     - assets/images/Search (2).png
+     - assets/images/data_exploration.png
+     - assets/images/Frame 37418.png
+     - assets/images/notification_add.png
+     - assets/images/image21.png
+     - assets/images/image22.png
+     - assets/images/image23.png
+     - assets/images/image24.png
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

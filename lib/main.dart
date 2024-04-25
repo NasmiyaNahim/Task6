@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:task6/pre_requirement.dart';
+import 'package:task6/training.dart';
 import 'package:task6/training_detailed.dart';
 
 void main() {
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: TrainingDetailed(),
+      home: PreRequirements(),
     );
   }
 }
