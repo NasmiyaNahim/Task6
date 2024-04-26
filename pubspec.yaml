@@ -70,6 +70,8 @@ flutter:
      - assets/images/image22.png
      - assets/images/image23.png
      - assets/images/image24.png
+     - assets/images/gify.gif
+     - assets/images/gify2.gif
 
   #   - images/a_dot_ham.jpeg
 

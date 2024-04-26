@@ -534,7 +534,7 @@ class TrainingDetailed extends StatelessWidget {
              
           }
 
-  Widget _buildRemindMeContainer() {
+    Widget _buildRemindMeContainer() {
     return Container(
       width: 324,
 height: 50,
