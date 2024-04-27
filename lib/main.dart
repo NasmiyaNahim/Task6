@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:task6/assesment_detailed_view.dart';
+import 'package:task6/assesments.dart';
+import 'package:task6/leaders_board.dart';
+import 'package:task6/practice_comming_soon.dart';
 import 'package:task6/pre_requirement.dart';
 import 'package:task6/pre_requirement_confirmation.dart';
 import 'package:task6/training.dart';
@@ -15,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Confirmation(),
+      home: Practice(),
     );
   }
 }

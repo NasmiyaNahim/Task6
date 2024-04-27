@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task6/training.dart';
 
 class Confirmation extends StatelessWidget {
   const Confirmation({Key? key}) : super(key: key);
@@ -53,23 +54,33 @@ class Confirmation extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 100),
-            Container(
-              width: 330,
-              height: 50,
-              decoration: BoxDecoration(
-                color: Color(0xFF414ECA),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Center(
-                child: Text(
-                  'Go to Home !',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
-                    fontFamily: 'Nunito',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
+            GestureDetector(
+                        onTap: () {
+                // Navigate to BuySellPage when tapped
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Training()),
+                );
+              },
+
+              child: Container(
+                width: 330,
+                height: 50,
+                decoration: BoxDecoration(
+                  color: Color(0xFF414ECA),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text(
+                    'Go to Home !',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontFamily: 'Nunito',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
                   ),
                 ),
               ),

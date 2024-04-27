@@ -72,6 +72,9 @@ flutter:
      - assets/images/image24.png
      - assets/images/gify.gif
      - assets/images/gify2.gif
+     - assets/images/leaders.gif
+     - assets/images/splash.gif
+     - assets/images/LOGO-2 2.png
 
   #   - images/a_dot_ham.jpeg
 
