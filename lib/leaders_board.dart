@@ -90,7 +90,7 @@ class Leader extends StatelessWidget {
                     },
               child: Container(
                 width: 303,
-                height: 30,
+                height: 40,
                 decoration: ShapeDecoration(
                   color: Color(0xFF414ECA),
                   shape: RoundedRectangleBorder(

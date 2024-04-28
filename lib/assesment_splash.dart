@@ -16,7 +16,7 @@ class Splash extends StatelessWidget {
             SizedBox(height: 150),
             Container(
               width: 281,
-              height: 281,
+              height: 270,
               decoration: ShapeDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/images/splash.gif"),
@@ -62,7 +62,7 @@ class Splash extends StatelessWidget {
                 height: 0,
               ),
             ),),
-            SizedBox(height: 200),
+            SizedBox(height: 160),
             GestureDetector(
                     onTap: () {
                   Navigator.push(context,
@@ -70,7 +70,7 @@ class Splash extends StatelessWidget {
                     },
               child: Container(
                 width: 350,
-                height: 50,
+                height: 40,
                 decoration: ShapeDecoration(
                   color: Color(0xFF414ECA),
                   shape: RoundedRectangleBorder(

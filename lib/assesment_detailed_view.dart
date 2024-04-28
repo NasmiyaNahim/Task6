@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task6/assesment_splash.dart';
 import 'package:task6/training.dart';
 
 class Assessments extends StatelessWidget {
@@ -83,7 +84,7 @@ class Assessments extends StatelessWidget {
                 // Navigate to BuySellPage when tapped
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Training()),
+                  MaterialPageRoute(builder: (context) => Splash()),
                 );
               },
 

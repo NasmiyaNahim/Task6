@@ -4,6 +4,7 @@ import 'package:task6/assesment_detailed_view.dart';
 //import 'package:task6/trainings.dart';
 
 import 'package:task6/pre_requirement.dart';
+import 'package:task6/training.dart';
 
 class TrainingDetailed extends StatelessWidget {
   const TrainingDetailed({Key? key});
@@ -16,7 +17,7 @@ class TrainingDetailed extends StatelessWidget {
         leading: IconButton(
           icon: GestureDetector(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => const TrainingDetailed()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const Training()));
             },
             child: Image.asset('assets/images/Arrow back.png'),
           ),
